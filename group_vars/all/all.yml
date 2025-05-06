@@ -11,15 +11,15 @@ bin_dir: /usr/local/bin
 
 
 ## External LB example config
-## apiserver_loadbalancer_domain_name: "elb.some.domain"
+apiserver_loadbalancer_domain_name: "cluster.yanychoi.com"
 # loadbalancer_apiserver:
 #   address: 1.2.3.4
 #   port: 1234
 
 ## Internal loadbalancers for apiservers
-# loadbalancer_apiserver_localhost: true
+loadbalancer_apiserver_localhost: true
 # valid options are "nginx" or "haproxy"
-# loadbalancer_apiserver_type: nginx  # valid values "nginx" or "haproxy"
+loadbalancer_apiserver_type: haproxy
 
 ## Local loadbalancer should use this port
 ## And must be set port 6443
